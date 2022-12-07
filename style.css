@@ -1,0 +1,80 @@
+.accordion {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 16px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.5s;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.active, .accordion:hover {
+    background-color: #fff;
+    color: red;
+    border-left: 3px solid red;
+}
+
+.accordion:after {
+    content: url(img/bottom.png);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: url(img/top.png);
+}
+
+ul {
+    list-style: none;
+
+}
+
+ul li:before {
+    content:  "-";
+    position: relative;
+    left: -5px;
+    right: 20px;
+}
+
+.panel {
+    padding: 0 18px;
+    color: #212121;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-left: 3px solid red;
+
+}
+h1{
+  margin-left: 50px;
+}
+
+.content{
+  left: auto;
+  right: auto;
+  padding: 70px;
+}
+.block{
+  margin-left: 150px;
+  width: 1500px;
+}
+button.but{
+  height: 50px;
+  width: 120px;
+  border: 2px solid #000;
+  border-radius: 5px;
+
+}
+
+div.button {
+  text-align: center;
+  margin-top: 20px;
+}
